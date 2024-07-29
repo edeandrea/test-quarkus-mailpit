@@ -13,6 +13,14 @@ projects:
         revision: ocp-4.15
 components:
   - container:
+    name: mailpit
+      image: axllent/mailpit
+      endpoints:
+        - exposure: public
+          name: web-frontend
+          protocol: https
+          targetPort: 8025
+  - container:
       cpuLimit: 2000m
       cpuRequest: 500m
       endpoints:
