@@ -13,7 +13,6 @@ projects:
         revision: ocp-4.15
 components:
   - container:
-    name: mailpit
       image: axllent/mailpit
       endpoints:
         - exposure: public
